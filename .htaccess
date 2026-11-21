@@ -1,0 +1,9 @@
+# API Cesarstwa Playera
+DirectoryIndex index.php
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options nosniff
+</IfModule>
+# Konfiguracja leży poza katalogiem publicznym w produkcji — patrz CP_CONFIG_PATH
+<FilesMatch "^config.*\.php$">
+  Require all denied
+</FilesMatch>
